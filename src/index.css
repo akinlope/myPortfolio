@@ -1,13 +1,219 @@
-body {
+@import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
+
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  font-family: "Quicksand", sans-serif;
+  /* color: #333; */
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.navComponent {
+  display: flex;
+  /* background-color: red; */
+  margin: 0 auto;
+  align-items: center;
+  max-width: 900px;
+  padding: 20px;
+  border-bottom: 1px solid #f2f2f2;
+}
+h1 {
+  color: #0095b7;
+}
+.navComponent .links {
+  margin-left: auto;
+}
+.navComponent a {
+  margin-left: 16px;
+  text-decoration: none;
+  padding: 6px;
+}
+.navComponent a:hover {
+  color: #0095b7;
+}
+
+.content {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.home {
+  /* background-color: red; */
+  display: flex;
+  margin-top: 50px;
+}
+.myInfo {
+  /* background-color: red; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 70px;
+}
+
+.myImg img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+}
+.myImg img:hover {
+  width: 310px;
+  height: 310px;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+.icon a {
+  padding: 5px;
+  font-size: larger;
+  color: #333;
+}
+.icon .faTw:hover {
+  font-size: x-large;
+  color: #1da1f2;
+}
+.icon .faGh:hover {
+  font-size: x-large;
+}
+.icon .faIg:hover {
+  font-size: x-large;
+  color: #f56040;
+}
+.myInfo h1 {
+  font-family: "Quicksand", sans-serif;
+  padding-top: 20px;
+}
+.myInfo p {
+  font-family: "Quicksand", sans-serif;
+  padding-top: 20px;
+  color: #333;
+}
+.infoBtn {
+  margin-top: 20px;
+  width: 300px;
+  /* background-color: red; */
+  display: flex;
+  justify-content: space-between;
+}
+.infoBtn button {
+  background-color: #333;
+  padding: 10px;
+  margin: auto;
+  border: none;
+  border-radius: 10px;
+  color: white;
+}
+.infoBtn button:hover {
+  background-color: #0095b7;
+  color: white;
+}
+
+/* ABOUT PAGE */
+.about {
+  display: flex;
+  margin-top: -30px;
+  justify-content: center;
+}
+.abt {
+  display: flex;
+  justify-content: center;
+}
+.aboutMe hr {
+  width: 100px;
+  margin-left: 44%;
+  margin-top: 5px;
+}
+.aboutCon {
+  margin: 0 auto;
+  /* background-color: red; */
+  margin-top: 20px;
+  max-width: 800px;
+  height: 550px;
+  display: flex;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 10px;
+}
+.aboutImg img {
+  width: 400px;
+  height: 550px;
+  border-radius: 10px 0 0 10px;
+}
+.aboutInfo {
+  padding: 30px;
+}
+.aboutInfo p {
+  font-family: "Quicksand", sans-serif;
+  color: #333;
+  word-spacing: 15px;
+}
+.bold {
+  margin-top: 100px;
+  /* background-color: red; */
+}
+.aboutBtb {
+  margin-top: 20px;
+  margin-left: 50px;
+  margin-right: 50px;
+  /* background-color: red; */
+  display: flex;
+  justify-content: space-between;
+}
+.aboutBtb button {
+  background-color: #333;
+  padding: 10px;
+  margin: auto;
+  border: none;
+  border-radius: 10px;
+  color: white;
+}
+.aboutBtb button:hover {
+  background-color: #0095b7;
+  color: white;
+}
+
+/* RESUME SECTION */
+.resume_h1{
+  display: flex;
+  /* margin-top: 170px; */
+  justify-content: center;
+}
+.resume_p{
+  display: flex;
+  justify-content: center;
+}
+.resume hr{
+  width: 100px;
+  margin-left: 42%;
+  margin-top: 5px;
+  margin-bottom: 50px;
+}
+.resumeCon{
+  display: flex;
+  max-width: 900px;
+  height: 400px;
+}
+.resumeSidebar{
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+  padding: 10px;
+}
+.resumeSidebar button{
+  padding: 10px;
+  margin-top: 10px;
+  border: none;
+  color: #333;
+  font-weight: bold;
+  font-family: "Quicksand", sans-serif;
+}
+.resumeSidebar button:hover{
+  background-color: #0095b7;
+  color: white;
+}
+
+
+.resumeInfo{
+  /* background-color: red; */
+  padding: 20px;
+  border: 1px solid #f2f2f2;
+  border-radius: 10px;
+  
 }
