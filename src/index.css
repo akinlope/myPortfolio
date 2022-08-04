@@ -28,7 +28,14 @@ h1 {
   padding: 6px;
 }
 .navComponent a:hover {
+  color: #0095b7; 
+}
+.navComponent a.active{
   color: #0095b7;
+  border-bottom: 5px solid #0095b7;
+  width: 100%;
+  border-radius: 1px;
+  transition: 0.5s ease;
 }
 
 .content {
@@ -226,7 +233,7 @@ h1 {
 }
 .contact hr{
   width: 100px;
-  margin-left: 42%;
+  margin-left: 45%;
   margin-top: 5px;
   margin-bottom: 50px;
 }
@@ -257,7 +264,7 @@ h1 {
 }
 .form{
   width: 60%;
-  height: 350px;
+  height: 380px;
   margin-top: 70px;
   padding: 10px;
   margin-right: 10px;
@@ -301,4 +308,5 @@ h1 {
   background-color: #0d0d0d;
   color: #f2f2f2;
   font-weight: bolder;
+  /* margin-bottom: 20px; */
 }

@@ -1,5 +1,7 @@
+import { Link } from "react-router-dom";
 import pic from "./img/a.jpg";
 import myCV from "./myCV.pdf";
+
 const AboutMe = () => {
   return (
     <div className="aboutMe">
@@ -30,7 +32,7 @@ const AboutMe = () => {
           <li>Building REST API's</li>
           <li>Managing database</li>
           <div className="aboutBtb">
-            <button>Hire Me</button>
+          <Link to="/contact"><button>Hire Me</button></Link>
             <a href={myCV} download="My_Resume.pdf"><button>Get Resume</button></a>
           </div>
         </div>

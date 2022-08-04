@@ -1,22 +1,41 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faTwitter, faInstagram } from "@fortawesome/free-brands-svg-icons";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 // import { EmailJSResponseStatus } from "@emailjs/browser";
 import emailjs from '@emailjs/browser';
+import RenderAlert from "./RenderAlert";
+import SendMes from "./SendMes";
 
 const ContactMe = () => {
     const [ isText, setText]= useState("")
     const [ isEmail, setEmail]= useState("")
     const [ isMessage, setMessage]= useState("")
+    const [ status, setStatus] = useState(false)
+
 
     const handleClickSubmit = (e) => {
-        e.preventDefaut();
-        console.log(isText);
-        emailjs.send("service_x13ea68", "template_1jq3gep", {isText, isEmail, isMessage}, "IqmYLm7fdRwH-eoDR")
-        .then((res)=> {console.log("Success", res);})
-        .catch((err)=> {console.log("Error", err);})
-        // useState(isText)
+        e.preventDefault()
+        emailjs.send("service_x13ea68", "template_1jq3gep", { isText, isEmail, isMessage }, "IqmYLm7fdRwH-eoDR")
+        .then((res)=> {
+          console.log("Success", res);
+          setText("")
+          setEmail("")
+          setMessage("")
+          setStatus(true)
+        }).catch((err)=> 
+        {console.log("Error", err);}
+        )
     }
+        useEffect(()=>{
+          if(status === true){
+            setTimeout(() => {
+              setStatus(false)
+            }, 3000);
+          }
+        },[status])
+  
+
+    
   return (
     <div className="contact">
       <h1>Contact Me</h1>
@@ -50,8 +69,11 @@ const ContactMe = () => {
               </a>
             </div>
           </div>
+          
           <div className="form">
-            <form>
+            {status &&<RenderAlert />}
+            {!status &&<SendMes />}
+            <form onSubmit={handleClickSubmit}>
               <label>Name</label>
               <input 
               type="text"
@@ -82,5 +104,6 @@ const ContactMe = () => {
     </div>
   );
 };
+
 
 export default ContactMe;

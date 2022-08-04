@@ -1,5 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faTwitter, faInstagram } from "@fortawesome/free-brands-svg-icons";
+import { Link } from "react-router-dom";
 import pic from "./img/a.jpg";
 import myCV from "./myCV.pdf";
 const Home = () => {
@@ -15,7 +16,7 @@ const Home = () => {
         <h1>Full stack Developer</h1>
         <p>Knack of building applications with front and back end operations</p>
         <div className="infoBtn">
-            <button>Hire Me</button>
+            <Link to="/contact"><button>Hire Me</button></Link>
             <a href={myCV} download="My_Resume.pdf"><button>Get Resume</button></a>
         </div>
       </div>
