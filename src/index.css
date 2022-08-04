@@ -208,12 +208,97 @@ h1 {
   background-color: #0095b7;
   color: white;
 }
-
-
 .resumeInfo{
-  /* background-color: red; */
   padding: 20px;
   border: 1px solid #f2f2f2;
   border-radius: 10px;
+}
+
+/* Contace Me */
+.contact{
+  max-width: 900px;
+  height: 700px;
+  /* background-color: blue; */
+}
+.contact h1, p{
+  display: flex;
+  justify-content: center;
+}
+.contact hr{
+  width: 100px;
+  margin-left: 42%;
+  margin-top: 5px;
+  margin-bottom: 50px;
+}
+.contactMe{
+  /* background-color: #333; */
+  height: 400px;
   
+}
+.container{
+  display: flex;
+  background-color: #0d0d0d;
+  height: 500px;
+  /* justify-content: center; */
+  /* align-items: center; */
+  border-radius: 10px;
+}
+.container h2{
+  color: white;
+  font-size: xx-large;
+}
+.touch{
+  width: 40%;
+  /* background-color: red; */
+  height: 200px;
+  /* margin-top: 100px; */
+  padding: 20px;
+  
+}
+.form{
+  width: 60%;
+  height: 350px;
+  margin-top: 70px;
+  padding: 10px;
+  margin-right: 10px;
+  border-radius: 10px;
+  background-color: #f2f2f2;
+
+}
+.form form{
+  display: flex;
+  flex-direction: column;
+  
+  /* padding: 20px; */
+}
+.form form input{
+  padding: 7px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  border: none;
+  background-color: #cccccc;
+}
+.form form textarea{
+  border-radius: 10px;
+  border: none;
+  background-color: #cccccc;
+}
+.form form label{
+  font-size: larger;
+  font-weight: bolder;
+  font-family: "Quicksand", sans-serif;
+  color: #333;
+}
+.form form button{
+  padding: 10px;
+  margin-top: 10px;
+  margin-left: 40%;
+  margin-right: 40%;
+  border: none;
+  border-radius: 10px;
+}
+.form form button:hover{
+  background-color: #0d0d0d;
+  color: #f2f2f2;
+  font-weight: bolder;
 }

@@ -1,6 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faTwitter, faInstagram } from "@fortawesome/free-brands-svg-icons";
-import pic from "./img/a.jpg"
+import pic from "./img/a.jpg";
+import myCV from "./myCV.pdf";
 const Home = () => {
   return (
     <div className="home">
@@ -15,7 +16,7 @@ const Home = () => {
         <p>Knack of building applications with front and back end operations</p>
         <div className="infoBtn">
             <button>Hire Me</button>
-            <button>Get Resume</button>
+            <a href={myCV} download="My_Resume.pdf"><button>Get Resume</button></a>
         </div>
       </div>
 
