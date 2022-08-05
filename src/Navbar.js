@@ -1,24 +1,19 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
 const Navbar = () => {
-// let btnContainer = document.getElementsByClassName("links");
-// let btns = btnContainer.querySelectorAll(".btn");
+
+  
+        const [isActive, setIsActive] = useState("a")
     
-// for(let i=0; i<btns.length; i++){
-//     btns[i].addEventListener("click", ()=>{
-//         let current = document.getElementsByClassName("active")
-//         current[0].className = current[0].className.replace(" active")
-//         this.className += " active"
-//     })
-// }
     
     return ( 
         <div className="navComponent">
                 <h1>TOLULOPE</h1>
                 <div className="links">
-                    <Link className="btn" to="/">Home</Link>
-                    <Link className="btn" to="/aboutMe">AboutMe</Link>
-                    <Link className="btn" to="/resume">Resume</Link>
-                    <Link className="btn" to="/contact">ContactMe</Link>
+                    <Link onClick={()=>{setIsActive("a")}} style={{backgroundColor: isActive === "a" && "#0095b7", color: isActive === "a" && "white", fontWeight: isActive === "a" && "bolder"}} to="/">Home</Link>
+                    <Link onClick={()=>{setIsActive("b")}} style={{backgroundColor: isActive === "b" && "#0095b7", color: isActive === "b" && "white", fontWeight: isActive === "b" && "bolder"}} to="/aboutMe">AboutMe</Link>
+                    <Link onClick={()=>{setIsActive("c")}} style={{backgroundColor: isActive === "c" && "#0095b7", color: isActive === "c" && "white", fontWeight: isActive === "c" && "bolder"}} to="/resume">Resume</Link>
+                    <Link onClick={()=>{setIsActive("d")}} style={{backgroundColor: isActive === "d" && "#0095b7", color: isActive === "d" && "white", fontWeight: isActive === "d" && "bolder"}} to="/contact">ContactMe</Link>
                 </div>
         </div>
      );

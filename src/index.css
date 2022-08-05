@@ -188,7 +188,7 @@ h1 {
 }
 .resume hr{
   width: 100px;
-  margin-left: 42%;
+  margin-left: 45%;
   margin-top: 5px;
   margin-bottom: 50px;
 }
@@ -200,7 +200,7 @@ h1 {
 .resumeSidebar{
   display: flex;
   flex-direction: column;
-  width: 35%;
+  width: 20%;
   padding: 10px;
 }
 .resumeSidebar button{
@@ -219,7 +219,67 @@ h1 {
   padding: 20px;
   border: 1px solid #f2f2f2;
   border-radius: 10px;
+  width: 75%;
 }
+/* Resume education */
+.education h3{
+  text-align: center;
+  font-family: "Quicksand", sans-serif;
+  font-weight: bolder;
+  margin-bottom: 20px;
+}
+.resHold{
+  display: flex;
+  padding: 20px;
+  justify-content: space-between;
+}
+.resHold div .sch{
+  font-weight: bolder;
+  color: #0095b7;
+  font-family: "Quicksand", sans-serif;
+  margin-bottom: 10px;
+}
+.resHold div .deg{
+  font-style: italic;
+  font-weight: bolder;
+  font-size: small;
+  font-family: "Quicksand", sans-serif;
+}
+.resHold .date{
+  background-color: #333;
+  color: white;
+  border-radius: 10px;
+  text-align: center;
+  font-size: smaller;
+  padding: 05px;
+}
+/* Resume Work History */
+.work h3{
+  text-align: center;
+  font-family: "Quicksand", sans-serif;
+  font-weight: bolder;
+  margin-bottom: 20px;
+}
+.workName{
+  display: flex;
+  justify-content: space-between;
+}
+.workName .myName, .myNameDate{
+  background-color: #0095b7;
+  color: white;
+  font-weight: bolder;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+/* Programming Skills */
+.skillName{
+  background-color: red;
+  /* margin-left: -400px; */
+  /* padding-left: -250px; */
+}
+
 
 /* Contace Me */
 .contact{
