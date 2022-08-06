@@ -2,7 +2,7 @@ const Skills = () => {
   return (
     <div className="skills">
       <div className="mySkill">
-        <div>
+        <div style={{marginBottom:"20px"}}>
           <p className="skillName" >JavaScript</p>
           <div 
             style={{
@@ -20,7 +20,7 @@ const Skills = () => {
             ></div>
           </div>
         </div>
-        <div>
+        <div style={{marginBottom:"20px"}}>
           <p className="skillName" >Python</p>
           <div 
             style={{
@@ -38,7 +38,7 @@ const Skills = () => {
             ></div>
           </div>
         </div>
-        <div>
+        <div style={{marginBottom:"20px"}}>
           <p className="skillName" >Firebase</p>
           <div 
             style={{
@@ -56,7 +56,7 @@ const Skills = () => {
             ></div>
           </div>
         </div>
-        <div>
+        <div style={{marginBottom:"20px"}}>
           <p className="skillName" >Django</p>
           <div 
             style={{
@@ -74,7 +74,7 @@ const Skills = () => {
             ></div>
           </div>
         </div>
-        <div>
+        <div style={{marginBottom:"20px"}}>
           <p className="skillName" >HTML</p>
           <div 
             style={{
@@ -92,7 +92,7 @@ const Skills = () => {
             ></div>
           </div>
         </div>
-        <div>
+        <div style={{marginBottom:"20px"}}>
           <p className="skillName" >CSS</p>
           <div
             style={{

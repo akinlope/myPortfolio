@@ -275,19 +275,17 @@ h1 {
 }
 /* Programming Skills */
 .skillName{
-  background-color: red;
-  /* margin-left: -400px; */
-  /* padding-left: -250px; */
+  color: #0095b7;
+  font-weight: bolder;
+  width: 20%;
 }
-
 
 /* Contace Me */
 .contact{
   max-width: 900px;
   height: 700px;
-  /* background-color: blue; */
 }
-.contact h1, p{
+.contact h1, .contact p{
   display: flex;
   justify-content: center;
 }
@@ -298,16 +296,12 @@ h1 {
   margin-bottom: 50px;
 }
 .contactMe{
-  /* background-color: #333; */
   height: 400px;
-  
 }
 .container{
   display: flex;
   background-color: #0d0d0d;
   height: 500px;
-  /* justify-content: center; */
-  /* align-items: center; */
   border-radius: 10px;
 }
 .container h2{
@@ -316,9 +310,7 @@ h1 {
 }
 .touch{
   width: 40%;
-  /* background-color: red; */
   height: 200px;
-  /* margin-top: 100px; */
   padding: 20px;
   
 }
@@ -335,8 +327,6 @@ h1 {
 .form form{
   display: flex;
   flex-direction: column;
-  
-  /* padding: 20px; */
 }
 .form form input{
   padding: 7px;
@@ -368,5 +358,4 @@ h1 {
   background-color: #0d0d0d;
   color: #f2f2f2;
   font-weight: bolder;
-  /* margin-bottom: 20px; */
 }
