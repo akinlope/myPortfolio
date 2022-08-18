@@ -216,6 +216,7 @@ h1 {
   color: white;
 }
 .resumeInfo{
+  overflow: auto;
   padding: 20px;
   border: 1px solid #f2f2f2;
   border-radius: 10px;
@@ -273,12 +274,45 @@ h1 {
   border-radius: 10px;
   margin-bottom: 20px;
 }
-/* Programming Skills */
-.skillName{
+/* Resume Programming Skills */
+.project h3{
+  text-align: center;
+  font-family: "Quicksand", sans-serif;
+  font-weight: bolder;
+  margin-bottom: 20px;
+}
+.proHold{
+  display: flex;
+  padding: 20px;
+  justify-content: space-between;
+}
+.proHold div .sch{
+  font-weight: bolder;
+  color: #0095b7;
+  font-family: "Quicksand", sans-serif;
+  margin-bottom: 10px;
+}
+/* .proHold div .deg{
+  font-style: italic;
+  color: #333;
+  font-weight: bolder;
+  font-size: small;
+  font-family: "Quicksand", sans-serif;
+} */
+.proHold .date{
+  background-color: #333;
+  color: white;
+  border-radius: 10px;
+  text-align: center;
+  font-size: smaller;
+  padding: 05px;
+}
+
+/* .skillName{
   color: #0095b7;
   font-weight: bolder;
   width: 20%;
-}
+} */
 
 /* Contace Me */
 .contact{
@@ -358,4 +392,7 @@ h1 {
   background-color: #0d0d0d;
   color: #f2f2f2;
   font-weight: bolder;
+}
+.touch .faGh:hover{
+  color: white;
 }

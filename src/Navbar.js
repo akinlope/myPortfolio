@@ -1,22 +1,54 @@
-import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-const Navbar = () => {
+const Navbar = ({clickClick}) => {
 
-  
-        const [isActive, setIsActive] = useState("a")
-    
-    
-    return ( 
-        <div className="navComponent">
-                <h1>TOLULOPE</h1>
-                <div className="links">
-                    <Link onClick={()=>{setIsActive("a")}} style={{backgroundColor: isActive === "a" && "#0095b7", color: isActive === "a" && "white", fontWeight: isActive === "a" && "bolder"}} to="/">Home</Link>
-                    <Link onClick={()=>{setIsActive("b")}} style={{backgroundColor: isActive === "b" && "#0095b7", color: isActive === "b" && "white", fontWeight: isActive === "b" && "bolder"}} to="/aboutMe">AboutMe</Link>
-                    <Link onClick={()=>{setIsActive("c")}} style={{backgroundColor: isActive === "c" && "#0095b7", color: isActive === "c" && "white", fontWeight: isActive === "c" && "bolder"}} to="/resume">Resume</Link>
-                    <Link onClick={()=>{setIsActive("d")}} style={{backgroundColor: isActive === "d" && "#0095b7", color: isActive === "d" && "white", fontWeight: isActive === "d" && "bolder"}} to="/contact">ContactMe</Link>
-                </div>
-        </div>
-     );
-}
- 
+
+  return (
+    <div className="navComponent">
+      <h1>TOLULOPE</h1>
+      <div className="links">
+        <Link
+          style={{
+            backgroundColor: clickClick === "Home" && "#0095b7",
+            color: clickClick === "Home" && "white",
+            fontWeight: clickClick === "Home" && "bolder",
+          }}
+          to="/"
+        >
+          Home
+        </Link>
+        <Link
+          style={{
+            backgroundColor: clickClick === "AboutMe" && "#0095b7",
+            color: clickClick === "AboutMe" && "white",
+            fontWeight: clickClick === "AboutMe" && "bolder",
+          }}
+          to="/aboutMe"
+        >
+          AboutMe
+        </Link>
+        <Link
+          style={{
+            backgroundColor: clickClick === "Resume" && "#0095b7",
+            color: clickClick === "Resume" && "white",
+            fontWeight: clickClick === "Resume" && "bolder",
+          }}
+          to="/resume"
+        >
+          Resume
+        </Link>
+        <Link
+          style={{
+            backgroundColor: clickClick === "ContactMe" && "#0095b7",
+            color: clickClick === "ContactMe" && "white",
+            fontWeight: clickClick === "ContactMe" && "bolder",
+          }}
+          to="/contact"
+        >
+          ContactMe
+        </Link>
+      </div>
+    </div>
+  );
+};
+
 export default Navbar;

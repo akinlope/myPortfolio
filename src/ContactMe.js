@@ -1,31 +1,43 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faTwitter, faInstagram } from "@fortawesome/free-brands-svg-icons";
 import { useEffect, useState } from "react";
-// import { EmailJSResponseStatus } from "@emailjs/browser";
 import emailjs from '@emailjs/browser';
 import RenderAlert from "./RenderAlert";
 import SendMes from "./SendMes";
 
-const ContactMe = () => {
+const ContactMe = ({toClick}) => {
+
+  toClick("ContactMe")
+
     const [ isText, setText]= useState("")
     const [ isEmail, setEmail]= useState("")
     const [ isMessage, setMessage]= useState("")
     const [ status, setStatus] = useState(false)
+    const [ emptyField, setEmptyField] = useState(true)
 
 
     const handleClickSubmit = (e) => {
         e.preventDefault()
-        emailjs.send("service_x13ea68", "template_1jq3gep", { isText, isEmail, isMessage }, "IqmYLm7fdRwH-eoDR")
+
+        if(isText.trim().length !== 0 && isEmail.trim().length !== 0 && isMessage.trim().length !== 0){
+          console.log("not empty");
+          emailjs.send("service_x13ea68", "template_1jq3gep", { isText, isEmail, isMessage }, "IqmYLm7fdRwH-eoDR")
         .then((res)=> {
           console.log("Success", res);
           setText("")
           setEmail("")
           setMessage("")
           setStatus(true)
+          setEmptyField(true)
         }).catch((err)=> 
         {console.log("Error", err);}
-        )
+        );
+        }else{
+          setEmptyField(false)
+        }
     }
+
+console.log(emptyField);
         useEffect(()=>{
           if(status === true){
             setTimeout(() => {
@@ -34,6 +46,10 @@ const ContactMe = () => {
           }
         },[status])
   
+
+        // useEffect(()=> {
+        //     setEmptyField(false)
+        // }, [emptyField])
 
     
   return (
@@ -73,6 +89,7 @@ const ContactMe = () => {
           <div className="form">
             {status &&<RenderAlert />}
             {!status &&<SendMes />}
+            {!emptyField && <p style={{color: "red", fontWeight: "bolder", fontFamily: "Quicksand, sans-serif"}}>Please fill the required fields</p>}
             <form onSubmit={handleClickSubmit}>
               <label>Name</label>
               <input 
@@ -95,7 +112,6 @@ const ContactMe = () => {
               value={isMessage}
               onChange={(e)=> {setMessage(e.target.value)}}
               ></textarea>
-              {/* <p>{isMessage}</p> */}
               <button onClick={handleClickSubmit}>Send</button>
             </form>
           </div>

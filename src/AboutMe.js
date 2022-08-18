@@ -2,7 +2,9 @@ import { Link } from "react-router-dom";
 import pic from "./img/a.jpg";
 import myCV from "./myCV.pdf";
 
-const AboutMe = () => {
+const AboutMe = ({toClick}) => {
+  toClick("AboutMe")
+  
   return (
     <div className="aboutMe">
       <div>

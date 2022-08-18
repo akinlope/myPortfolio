@@ -6,7 +6,10 @@ import RProject from "./RProject";
 import RSkills from "./RSkills";
 import RWork from "./RWork";
 
-const Resume = () => {
+const Resume = ({toClick}) => {
+  toClick("Resume");
+
+  
   const componentsEnum = {
     education: REducation,
     work: RWork,
@@ -15,10 +18,6 @@ const Resume = () => {
     interest: RInterest
   };
 
-  // const handleClick = (event) => {
-  //   event.currentTarget.style.background = 'salmon';
-  //   event.currentTarget.style.color = 'white';
-  // }
 
   const [resumeComponent, setResumeComponent] = useState(
     componentsEnum.education
