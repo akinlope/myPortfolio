@@ -21,7 +21,7 @@ const ContactMe = ({toClick}) => {
 
         if(isText.trim().length !== 0 && isEmail.trim().length !== 0 && isMessage.trim().length !== 0){
           console.log("not empty");
-          emailjs.send("service_x13ea68", "template_1jq3gep", { isText, isEmail, isMessage }, "IqmYLm7fdRwH-eoDR")
+          emailjs.send("myPortfolio", "myPortfolio", { isText, isEmail, isMessage }, "IqmYLm7fdRwH-eoDR")
         .then((res)=> {
           console.log("Success", res);
           setText("")
@@ -106,7 +106,7 @@ console.log(emptyField);
               onChange={(e)=> {setEmail(e.target.value)}}
               />
               <label>Message</label>
-              <textarea 
+              <textarea style={{resize: "none"}}
               name="" id="" cols="30" rows="10"
               required
               value={isMessage}
