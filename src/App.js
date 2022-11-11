@@ -13,7 +13,7 @@ function App() {
   const [isActive, setIsActive] = useState();
 
   function myFunction(param) {
-    // setIsActive(param);
+    setIsActive(param);
   }
 
   return (
