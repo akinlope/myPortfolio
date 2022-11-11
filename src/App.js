@@ -10,10 +10,10 @@ import Navbar from "./Navbar";
 import Resume from "./Resume";
 
 function App() {
-  const [isActive, setIsActive] = useState("");
+  const [isActive, setIsActive] = useState();
 
   function myFunction(param) {
-    setIsActive(param);
+    // setIsActive(param);
   }
 
   return (
@@ -22,7 +22,7 @@ function App() {
         <Navbar clickClick={isActive} />
         <div className="content">
           <Routes>
-            <Route  path="/" element={<Home toClick={myFunction}/>} />
+            <Route  path="/" element={<Home toClick={myFunction} />} />
               {/* <Home toClick={myFunction}/> */}           
           </Routes>
 
