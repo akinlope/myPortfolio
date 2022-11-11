@@ -20,10 +20,10 @@ const ContactMe = ({toClick}) => {
         e.preventDefault()
 
         if(isText.trim().length !== 0 && isEmail.trim().length !== 0 && isMessage.trim().length !== 0){
-          console.log("not empty");
+          // console.log("not empty");
           emailjs.send("myPortfolio", "myPortfolio", { isText, isEmail, isMessage }, "IqmYLm7fdRwH-eoDR")
         .then((res)=> {
-          console.log("Success", res);
+          // console.log("Success", res);
           setText("")
           setEmail("")
           setMessage("")
@@ -37,7 +37,7 @@ const ContactMe = ({toClick}) => {
         }
     }
 
-console.log(emptyField);
+// console.log(emptyField);
         useEffect(()=>{
           if(status === true){
             setTimeout(() => {

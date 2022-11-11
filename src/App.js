@@ -1,5 +1,7 @@
 import { useState } from "react";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes, } from "react-router-dom";
+
+//imported pages
 import AboutMe from "./AboutMe";
 import ContactMe from "./ContactMe";
 import Home from "./Home";
@@ -19,26 +21,26 @@ function App() {
       <div className="App">
         <Navbar clickClick={isActive} />
         <div className="content">
-          <Switch>
-            <Route exact path="/">
-              <Home toClick={myFunction}/>
-            </Route>
-          </Switch>
-          <Switch>
-            <Route path="/aboutMe">
-              <AboutMe toClick={myFunction}/>
-            </Route>
-          </Switch>
-          <Switch>
-            <Route path="/resume">
-              <Resume toClick={myFunction} />
-            </Route>
-          </Switch>
-          <Switch>
-            <Route path="/contact">
-              <ContactMe toClick={myFunction}/>
-            </Route>
-          </Switch>
+          <Routes>
+            <Route  path="/" element={<Home toClick={myFunction}/>} />
+              {/* <Home toClick={myFunction}/> */}           
+          </Routes>
+
+          <Routes>
+            <Route path="/aboutMe" element={<AboutMe toClick={myFunction}/>} />
+              {/* <AboutMe toClick={myFunction}/> */}
+          </Routes>
+
+
+          <Routes>
+            <Route path="/resume" element={<Resume toClick={myFunction}/>} />
+              {/* <Resume toClick={myFunction} /> */}
+            
+          </Routes>
+          <Routes>
+            <Route path="/contact" element={<ContactMe toClick={myFunction}/> }/>
+              {/* <ContactMe toClick={myFunction}/> */}
+          </Routes>
         </div>
       </div>
     </Router>
