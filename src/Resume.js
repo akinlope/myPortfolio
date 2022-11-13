@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-// import { render } from "react-dom";
 import REducation from "./REducation";
 import RInterest from "./RInterest";
 import RProject from "./RProject";

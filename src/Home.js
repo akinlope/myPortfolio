@@ -6,7 +6,7 @@ import myCV from "./myCV.pdf";
 import { useEffect } from "react";
 
 const Home = ({toClick}) => {
-  // toClick("Home");
+
   useEffect(()=> {
     toClick("Home");
   });
