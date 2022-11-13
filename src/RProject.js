@@ -6,8 +6,8 @@ const Projects = () => {
         <div>
           <p className="sch">MY PORTFOLIO</p>
           <p className="deg">
-            <b>Technologies Used: REACT and HEROKU</b> <br />A web-based
-            application that is all abou me and also enable you contact me.
+            <b>Technologies Used: REACT and NETLIFY</b> <br />A web-based
+            application that is all about me and also enable you contact me.
           </p>
         </div>
         <div>

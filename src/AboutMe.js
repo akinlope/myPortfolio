@@ -1,9 +1,13 @@
+import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import pic from "./img/a.jpg";
 import myCV from "./myCV.pdf";
 
 const AboutMe = ({toClick}) => {
-  toClick("AboutMe")
+
+  useEffect(()=> {
+    toClick("AboutMe");
+  });
   
   return (
     <div className="aboutMe">
@@ -20,8 +24,8 @@ const AboutMe = ({toClick}) => {
         <div className="aboutInfo">
           <p>
             I'm a full stack web developer with vast knowledge of HTML, CSS,
-            JAVASCRIPT, PYTHON and REACT,JS along with a knack of building web
-            applications with utmost efficiency strong efficiency with a HND
+            JAVASCRIPT, PYTHON and REACT.JS along with a knack of building web
+            applications with utmost and strong efficiency and
             willing to be an asset for an organization.
           </p>
 

@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 // import { render } from "react-dom";
 import REducation from "./REducation";
 import RInterest from "./RInterest";
@@ -7,7 +7,10 @@ import RSkills from "./RSkills";
 import RWork from "./RWork";
 
 const Resume = ({toClick}) => {
-  toClick("Resume");
+
+  useEffect(()=> {
+    toClick("Resume");
+  });
 
   
   const componentsEnum = {

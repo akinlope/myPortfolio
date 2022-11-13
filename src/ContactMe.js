@@ -7,7 +7,9 @@ import SendMes from "./SendMes";
 
 const ContactMe = ({toClick}) => {
 
-  toClick("ContactMe")
+  useEffect(()=> {
+    toClick("ContactMe");
+  });
 
     const [ isText, setText]= useState("")
     const [ isEmail, setEmail]= useState("")

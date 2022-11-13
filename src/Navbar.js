@@ -24,7 +24,7 @@ const Navbar = ({clickClick}) => {
           }}
           to="/aboutMe"
         >
-          AboutMe
+          About_Me
         </Link>
         <Link
           style={{
@@ -44,7 +44,7 @@ const Navbar = ({clickClick}) => {
           }}
           to="/contact"
         >
-          ContactMe
+          Contact_Me
         </Link>
       </div>
     </div>

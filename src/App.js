@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { BrowserRouter as Router, Route, Routes, } from "react-router-dom";
 
 //imported pages
@@ -15,6 +15,10 @@ function App() {
   function myFunction(param) {
     setIsActive(param);
   }
+
+  // useEffect(() => {
+  //   myFunction;
+  // })
 
   return (
     <Router>

@@ -3,8 +3,14 @@ import { faGithub, faTwitter, faInstagram } from "@fortawesome/free-brands-svg-i
 import { Link } from "react-router-dom";
 import pic from "./img/a.jpg";
 import myCV from "./myCV.pdf";
+import { useEffect } from "react";
+
 const Home = ({toClick}) => {
-  toClick("Home");
+  // toClick("Home");
+  useEffect(()=> {
+    toClick("Home");
+  });
+
   return (
     <div className="home">
       <div className="myInfo">
