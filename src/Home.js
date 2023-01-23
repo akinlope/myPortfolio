@@ -15,9 +15,9 @@ const Home = ({toClick}) => {
     <div className="home">
       <div className="myInfo">
         <div className="icon">
-            <a href="http://www.twitter.com/Akinlope" target={"_blank"} className="faTw"><FontAwesomeIcon  icon={faTwitter}/></a>
-            <a href="https://github.com/akinlope" target={"_blank"} className="faGh"><FontAwesomeIcon  icon={faGithub}/></a>
-            <a href="https://www.instagram.com/its.tolulope" target={"_blank"} className="faIg"><FontAwesomeIcon  icon={faInstagram}/></a>  
+            <a href="http://www.twitter.com/Akinlope" target={"_blank"}  rel="noreferrer" className="faTw"><FontAwesomeIcon  icon={faTwitter}/></a>
+            <a href="https://github.com/akinlope" target={"_blank"}  rel="noreferrer" className="faGh"><FontAwesomeIcon  icon={faGithub}/></a>
+            <a href="https://www.instagram.com/its.tolulope" target={"_blank"}  rel="noreferrer" className="faIg"><FontAwesomeIcon  icon={faInstagram}/></a>  
         </div>
         <h2>Hello, I'm Tolu</h2>
         <h1>Full stack Developer</h1>

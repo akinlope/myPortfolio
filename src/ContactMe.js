@@ -62,6 +62,7 @@ const ContactMe = ({toClick}) => {
               <a
                 href="http://www.twitter.com/Akinlope"
                 target={"_blank"}
+                rel="noreferrer"
                 className="faTw"
               >
                 <FontAwesomeIcon icon={faTwitter} />
@@ -69,6 +70,7 @@ const ContactMe = ({toClick}) => {
               <a
                 href="https://github.com/akinlope"
                 target={"_blank"}
+                rel="noreferrer"
                 className="faGh"
               >
                 <FontAwesomeIcon icon={faGithub} />
@@ -76,6 +78,7 @@ const ContactMe = ({toClick}) => {
               <a
                 href="https://www.instagram.com/its.tolulope"
                 target={"_blank"}
+                rel="noreferrer"
                 className="faIg"
               >
                 <FontAwesomeIcon icon={faInstagram} />
